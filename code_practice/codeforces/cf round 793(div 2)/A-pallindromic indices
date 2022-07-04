@@ -1,0 +1,78 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+#define llu unsigned long long
+#define ll long long int
+#define yes cout<<"YES\n"
+#define no cout<<"NO\n"
+#define nl cout<<"\n"
+#define pb push_back
+#define mp make_pair
+#define ff first
+#define ss second
+//#define srt_v sort(v.begin(),v.end())
+#define srt_v(n) sort(v,v+n)
+#define all(v) v.begin(),v.end()
+#define tc int test;cin>>test;while(test--)
+#define rep(i,a,b) for(int i=a; i<b; i++)
+#define rev(i,a,b) for(int i=a; i>=b; i--)
+#define vpi vector<pair<int,int> >
+#define MAX  1000000000000000000
+#define als 1e-30
+/*
+ll pow(int a)
+{
+    ll res=1;
+    for(int i=1; i<=a; i++){
+        res*=2;
+    }
+    return res;
+}*/
+
+int j=1;
+void solve()
+{
+    int n,i,cnt=1;
+    bool flag=0;
+    string s;
+    cin>>n;
+    cin>>s;
+    if(n%2 && s[n/2-1]!=s[n/2]){
+        cnt=1;
+        flag=1;
+    }
+    else{
+    for(int i=(n/2)-1; i>=1; i--){
+        if(s[i]==s[i-1])
+            cnt++;
+        else break;
+    }}
+    ///cout<<"count :"<<cnt;nl;
+    if(!flag){
+        if(n%2)
+            cout<<cnt*2+1;
+        else cout<<cnt*2;
+        nl;
+    }
+    else{cout<<cnt;nl;}
+}
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    tc{
+    solve();
+    }
+    return 0;
+}
+/*
+3
+3
+ccc
+5
+abbba
+7
+abbbbba
+*/

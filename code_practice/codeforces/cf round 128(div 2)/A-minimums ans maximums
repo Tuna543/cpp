@@ -1,0 +1,66 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+#define ll long long int
+#define yes cout<<"YES\n"
+#define no cout<<"NO\n"
+#define nl cout<<"\n"
+#define pb push_back
+#define mp make_pair
+#define ff first
+#define ss second
+//#define srt_v sort(v.begin(),v.end())
+#define srt_v(n) sort(v,v+n)
+#define all(v) v.begin(),v.end()
+#define tc int test;cin>>test;while(test--)
+#define rep(i,a,b) for(int i=a; i<b; i++)
+#define rev(i,a,b) for(int i=a; i>=b; i--)
+#define vpi vector<pair<int,int> >
+#define MAX  100000002
+/*
+ll pow(int a)
+{
+    ll res=1;
+    for(int i=1; i<=a; i++){
+        res*=2;
+    }
+    return res;
+}*/
+void solve()
+{
+    int l1,l2,r1,r2;
+    cin>>l1>>r1>>l2>>r2;
+    if(l1==l2)
+        cout<<l1;
+    else if(l2>l1){
+        if(r1<l2)
+            cout<<l1+l2;
+        else cout<<l2;
+    }
+    else{
+        if(r2<l1)cout<<l1+l2;
+        else cout<<l1;
+    }
+    nl;
+}
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    tc{
+    solve();
+    }
+    return 0;
+}
+/*
+4
+2 3
+1 1
+5 3
+1 8 7 6 4
+6 2
+3 5 7 12 9 0
+1 9
+1
+*/

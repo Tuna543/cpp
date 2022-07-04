@@ -1,0 +1,92 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+#define ll long long int
+#define yes cout<<"YES\n"
+#define no cout<<"NO\n"
+#define nl cout<<"\n"
+#define pb push_back
+#define mp make_pair
+#define ff first
+#define ss second
+//#define srt_v sort(v.begin(),v.end())
+#define srt_v(n) sort(v,v+n)
+#define all(v) v.begin(),v.end()
+#define tc int test;cin>>test;while(test--)
+#define rep(i,a,b) for(int i=a; i<b; i++)
+#define rev(i,a,b) for(int i=a; i>=b; i--)
+#define vpi vector<pair<int,int> >
+#define MAX  100000002
+/*
+ll pow(int a)
+{
+    ll res=1;
+    for(int i=1; i<=a; i++){
+        res*=2;
+    }
+    return res;
+}*/
+void solve()
+{
+    int n,m,index=0;
+    bool flag=1;
+    cin>>n>>m;
+    char arr[n][m];
+    int col[n];
+    rep(i,0,n)
+    {
+        rep(j,0,m)
+        {
+            cin>>arr[i][j];
+        }
+    }
+    rep(i,0,n)
+    {
+        rep(j,0,m)
+        {
+            if(arr[i][j]=='R'){
+                col[index++]=j;
+                break;
+            }
+        }
+    }/*
+    rep(i,0,index)
+    {
+        cout<<col[i]<<" ";
+    }
+    nl;*/
+    rep(i,1,index)
+    {
+        if(col[0]>col[i]){
+            flag=0;
+        }
+        if(index==1) flag=1;
+    }
+    if(flag) yes;
+    else no;
+
+}
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    tc{
+    solve();
+    }
+    return 0;
+}
+/*
+3 3
+EER
+EEE
+EEE
+3 3
+EER
+EER
+ERE
+3 3
+EER
+EEE
+RER
+*/
