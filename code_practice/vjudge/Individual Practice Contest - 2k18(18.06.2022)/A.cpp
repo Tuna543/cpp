@@ -20,36 +20,67 @@ using namespace std;
 #define vpi vector<pair<ll, ll>>
 #define MAX 1e18
 //int m[MAX];
+int i=1;
 
 void solve()
 {
-    ll n,x,mn=LONG_MAX;
-    cin>>n>>x;
-    vector<pair<ll, pair<ll,ll> > > v(n);
-    vector<ll> arr;
-    rep(i,0,n){
-        cin>>v[i].ss.ff>>v[i].ss.ss;
-        v[i].ff=v[i].ss.ff+v[i].ss.ss;
-        if(i!=0){
-            v[i].ff+=v[i-1].ff;
+    int a,b,c,k,sum,rem;
+    cin>>a>>b>>c>>k;
+    rem=(a+b+c)%3;
+    if(rem){
+        cout<<"Case "<<i++<<": Fight\n";
+        return;
+    }
+    else{
+        sum=(a+b+c)/3;
+        if(a>sum){
+            if(abs(a-sum)%k==0){
+                a=sum;
+            }
         }
-        if((x-i-1)>=0)
-            arr.pb((x-i-1)*v[i].ss.ss);
+        else if(a<sum){
+            if(abs(a-sum)%k==0){
+                a=sum;
+            }
+        }
+
+        if(b>sum){
+            if(abs(b-sum)%k==0){
+                b=sum;
+            }
+        }
+        else if(b<sum){
+            if(abs(b-sum)%k==0){
+                b=sum;
+            }
+        }
+
+        if(c>sum){
+            if(abs(c-sum)%k==0){
+                c=sum;
+            }
+        }
+        else if(c<sum){
+            if(abs(c-sum)%k==0){
+                c=sum;
+            }
+        }
     }
-    rev(i,arr.size()-1,0){
-        mn=min(mn,arr[i]+v[i].ff);
+    // cout<<a<<" "<<b<<" "<<c;nl;
+    if(a==b && b==c){        
+        cout<<"Case "<<i++<<": Peaceful\n";
     }
-    cout<<mn;nl;
-    //sort(arr,arr+n);
-    //cout<<arr[0];nl;
+    else{
+        cout<<"Case "<<i++<<": Fight\n";
+    }
 }
 int main()
 { 
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    /// tc{
+    tc{
     solve();
-    ///}
+    }
     return 0;
 }
