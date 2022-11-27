@@ -24,35 +24,25 @@ using namespace std;
 
 void solve()
 {
-    string h,m,temp1,temp2;
-    char t;
+    int h,m;
     cin>>h>>m;
     while (true)
     {
-        temp1=h, temp2=m;
-        if(temp1.length()==1) swap(temp1[0],temp2[0]);
-        else swap(temp1[1],temp2[0]);
-        if(temp1.compare("24")<0 && temp2.compare("60")<0){
+        int lasth=h%10, firsth=h/10, lastm=m%10, firstm=m/10, temph,tempm;
+        temph=firsth*10+firstm;
+        tempm=lasth*10+lastm;
+        if(temph<=23 && tempm<=59){
             cout<<h<<" "<<m<<"\n";
             return;
         }
-
-        int min= stoi(m);
-        min++;
-        if(min>59){
-            m="0";
-            int hour = stoi(h);
-            hour++;
-            if(hour>=24)
-                hour=0;
-            h=to_string(hour);
+        m++;
+        if(m>59){
+            m=0;
+            h++;
+            if(h>23)
+                h=0;
         }
-        else{
-            m=to_string(min);
-        }
-
-    }
-    
+    }   
 }
 int main()
 { 
