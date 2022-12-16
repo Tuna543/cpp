@@ -1,0 +1,69 @@
+   
+Header File Found!
+       	 
+Valid declaration!
+	  	
+Value of the variable p1:  10	
+
+FUNC Declared!
+               
+Valid declaration!
+	 
+Double Declaration! 
+ 
+Valid declaration!
+		   	
+Comment detected
+	
+Value of the variable t:  8	
+	   	
+Value of the variable a1:  10	
+	   	
+Value of the variable b:  2	
+                      
+Value of the variable c:  12	
+    
+Value of the variable d:  8	
+	   	 		   			     
+Value of the variable a1:  10	
+		 			     
+Value of the variable b:  2	
+
+Condition is false in IF
+ 		 	 		   			       			 
+Value of the variable c:  12	
+								   			  
+Value of the variable d:  2	
+			
+Condition is true in IF
+ 	
+Condition is true in IF
+				     		      
+Executed 10
+		     		
+Value of the variable d:  1	
+	 	             		   		
+Value of the variable b:  2	
+	Value of i in for loop increasing 2
+Value of i in for loop increasing 4
+
+	              		    		
+Value of the variable b:  2	
+	Value of i in for loop Decreasing 6
+Value of i in for loop Decreasing 3
+Value of i in for loop Decreasing 0
+
+             	        
+Value of the variable a1:  10	
+	While loop here increasing; value of variable a1 : 12
+While loop here increasing; value of variable a1 : 14
+	         	        
+Value of the variable a1:  10	
+	While loop here decreasing; value of variable a1 : 8
+While loop here decreasing; value of variable a1 : 6
+While loop here decreasing; value of variable a1 : 4
+	
+Value of the variable d:  1	
+		
+Program successfully ended
+	 

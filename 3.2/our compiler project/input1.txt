@@ -1,0 +1,26 @@
+addheaders
+integer chief { 
+  integer val as 3;
+  repeat(val eq 3){
+    out ("This our porject") full
+    valdec full
+  }
+  
+  integer num;
+  isit(num mod 2 eq 0)
+     out("dd is even") full
+  finalis
+     out("dd isn't even") full
+
+  shift(num){
+    shiftcase 1:
+      out("this is 1") full
+      halt full
+    shiftcase 2:
+      out("this is 2") full
+      halt full
+    none:
+      out("other number") full
+  }
+  giveback 0 full
+}

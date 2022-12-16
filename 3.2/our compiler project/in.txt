@@ -1,0 +1,86 @@
+#include < habijabi.h >
+
+Def pq ( c , d ) 
+{
+	integer p1;
+	p1 = 10;
+	value(p1);
+}
+
+main{
+    integer a1 , b , c , d , e, t ;
+	integer a1 ;
+	
+	t = 8 ;
+
+	'	
+	string s = "this is my compiler program";
+        fghfjkghf
+	'
+
+	value(t);
+	a1 = 10 ;
+	value(a1);
+	b = 2; 
+	value(b);
+
+    c = a1 + b ;
+    d = a1 - b ;
+    value(c);
+    value(d);
+
+	isit[a1 > b] 
+	{ 
+		isit[c < a1] 
+			{ d = c ; value(a1);}
+		finalis 
+			{ d = a1 ; value(b);} 
+	}
+	finalis 
+	{ 
+		isit[c > b] 
+			{ d = c + a1 ; 
+			 value(c);
+			}
+		finalis
+			{ d = b;
+			  value(d);
+			} 
+	}
+
+	shift[a1]
+	{
+		2  :   {d=2;}
+		10 :   {d = 10;}
+		none : {d = 1; }
+	}
+	value(d);
+	 
+	run [ b = 2 . b < 5 . b += 2 ]
+	{	   
+		value(b);
+	}
+	run [ b = 6 . b > 0 . b -= 3 ] 
+	{
+	    
+		value(b);
+	}
+
+    repeat [ a1 < 15 . a += 2 ]
+	{
+        value(a1);
+	}
+
+	repeat [ a1 > 2 . a -= 2 ]
+	{
+        value(a1);
+	}
+	value(d);
+	
+	
+
+}
+
+
+	
+ 

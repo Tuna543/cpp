@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int arr[20];
+    int a,b;
+    a=10;
+    b=20;
+    if(a>b){
+        printf(a);
+    }
+    else{
+        printf(b);
+    }
+
+    while (a>5)
+    {
+        printf("hello\n");
+        a--;
+    }
+
+    
+    return;
+}

@@ -1,0 +1,86 @@
+#include<stdio.h> is a header file
+newline
+int is int keyword
+ main is a Main Function
+( is first bracket
+) is first bracket
+newline
+{ is second bracket
+newline
+    int is int keyword
+ arr[20] is a arr
+; is a semicolon, indicates end of a sentence
+newline
+    int is int keyword
+ a is a variable
+, is a comma
+b is a variable
+; is a semicolon, indicates end of a sentence
+newline
+    a is a variable
+= is a Assignment operation
+10 is positive number
+; is a semicolon, indicates end of a sentence
+newline
+    b is a variable
+= is a Assignment operation
+20 is positive number
+; is a semicolon, indicates end of a sentence
+newline
+    if) is a Conditional if
+( is first bracket
+a is a variable
+> is a gg Than operation
+b is a variable
+) is first bracket
+{ is second bracket
+newline
+        printf is a printf Function
+( is first bracket
+a is a variable
+) is first bracket
+; is a semicolon, indicates end of a sentence
+newline
+    } is second bracket
+newline
+    else) is a Conditional (else)
+{ is second bracket
+newline
+        printf is a printf Function
+( is first bracket
+b is a variable
+) is first bracket
+; is a semicolon, indicates end of a sentence
+newline
+    } is second bracket
+newline
+newline
+    while is a variable
+ ( is first bracket
+a is a variable
+> is a gg Than operation
+5 is positive number
+) is first bracket
+newline
+    { is second bracket
+newline
+        printf is a printf Function
+( is first bracket
+"hello is a variable
+\n is a variable
+") is first bracket
+; is a semicolon, indicates end of a sentence
+newline
+        a is a variable
+-- is a Decrement operation
+; is a semicolon, indicates end of a sentence
+newline
+    } is second bracket
+newline
+newline
+    newline
+    return is return
+; is a semicolon, indicates end of a sentence
+newline
+} is second bracket
+newline

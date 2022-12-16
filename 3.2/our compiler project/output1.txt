@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main { 
+  int val = 3;
+  while(val == 3){
+    printf ("This our porject") ;
+    val-- ;
+  }
+  
+  int num;
+  if(num % 2 == 0)
+     printf("1311751708 is even") ;
+  else
+     printf("1311751708 isn't even") ;
+
+  switch(num){
+    case 1:
+      printf("this is 1") ;
+      break ;
+    case 2:
+      printf("this is 2") ;
+      break ;
+    default:
+      printf("other number") ;
+  }
+  return 0 ;
+}
